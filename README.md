@@ -1,4 +1,4 @@
-# axios_interceptors
+# interceptors
 
 ## Project setup
 ```

@@ -28,7 +28,6 @@ instance.interceptors.request.use(
         return config;
     }, 
     function (error) {
-        console.log('error asdfasf', error)
         // 요청 에러 처리를 작성합니다.
         return Promise.reject(error);
     }
@@ -50,7 +49,6 @@ instance.interceptors.response.use(
         응답 바로 직전에 대해 작성합니다. 
         .then() 으로 이어집니다.
     */
-        console.log('asdf', response)
         return response;
     },
 
@@ -60,7 +58,6 @@ instance.interceptors.response.use(
         응답 에러 처리를 작성합니다.
         .catch() 으로 이어집니다.    
     */
-        console.log('asdfsasdafa')
         return Promise.reject(error);
     }
 );
